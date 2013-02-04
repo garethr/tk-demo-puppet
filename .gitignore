@@ -11,3 +11,6 @@ Berksfile.lock
 .kitchen.local.yml
 vendor
 .bundle
+.librarian
+.tmp
+modules/*/*

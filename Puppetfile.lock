@@ -1,0 +1,8 @@
+FORGE
+  remote: http://forge.puppetlabs.com
+  specs:
+    saz/motd (2.0.3)
+
+DEPENDENCIES
+  saz/motd (>= 0)
+

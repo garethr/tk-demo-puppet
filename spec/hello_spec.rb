@@ -11,7 +11,7 @@ describe 'our little webserver that could' do
     @response.body.should =~ /Welcome to nginx/
   end
 
-  it 'should return 200' do
+  it 'should return an OK status code' do
     @response.env[:status].should == 200
   end
 

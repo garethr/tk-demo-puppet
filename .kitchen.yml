@@ -2,6 +2,7 @@
 driver_plugin: vagrant
 driver_config:
   box: precise64
+  box_url: http://files.vagrantup.com/precise64.box
 platforms:
 - name: app-server
   provisioner: puppet

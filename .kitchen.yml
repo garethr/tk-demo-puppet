@@ -1,0 +1,19 @@
+---
+driver_plugin: vagrant
+driver_config:
+  box: precise64
+platforms:
+- name: app-server
+  provisioner: puppet
+  driver_config:
+    network:
+      hostonly: '33.33.33.20'
+- name: load-balancer
+  provisioner: puppet
+  driver_config:
+    forward_port: [80, 8080]
+    network:
+      hostonly: '33.33.33.21'
+suites:
+- name: default
+  run_list: []
